@@ -1,0 +1,38 @@
+{
+  "scope": "native checkpoint loading and shape probes before simulation",
+  "team_legacy_checkpoint": "results/bc_lane_s0/model.pt @ 6a46c54",
+  "native_inference_checks": {
+    "team_legacy": {
+      "format": "team_legacy_bc",
+      "observation_dimension": 49,
+      "action_dimension": 2,
+      "lane_output": "continuous_scalar",
+      "compatible_with_published_evaluator": false
+    },
+    "role3": {
+      "format": "role3",
+      "observation_dimension": 65,
+      "conflict_observation": "yield-filtered",
+      "lane_output": "three_logits",
+      "compatible_with_published_evaluator": true
+    }
+  },
+  "rejected": {
+    "legacy_policy_given_65_observations": {
+      "error_type": "ValueError",
+      "detail": "observation shape은 (49,)이어야 합니다."
+    },
+    "role3_policy_given_49_observations": {
+      "error_type": "ValueError",
+      "detail": "operands could not be broadcast together with shapes (49,) (65,) "
+    },
+    "legacy_loader_given_role3_checkpoint": {
+      "error_type": "KeyError",
+      "detail": "'state_dim'"
+    },
+    "role3_loader_given_legacy_checkpoint": {
+      "error_type": "ValueError",
+      "detail": "Checkpoint does not declare the ordered 65-field Role 3 observation schema"
+    }
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "av_inserted": false,
+  "runtime_seconds_per_seed": 3600,
+  "rotary_radius": {
+    "network_sha256": {
+      "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+      "daehakro.net.xml": "be2296074d5a05f0bda9b025791aaf26173961b2b9a0677204e86616bba5630e",
+      "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+      "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+      "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+      "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+    },
+    "seeds": [
+      850121,
+      850122,
+      850123,
+      850124,
+      850125,
+      850126,
+      850127,
+      850128
+    ],
+    "runs": [
+      {
+        "seed": 850121,
+        "departed": 5575,
+        "arrived": 5268,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 211.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1627.5,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_1",
+            "arrived": 1890.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850122,
+        "departed": 5703,
+        "arrived": 5352,
+        "teleported": 0,
+        "collision_events_by_type": {
+          "crossing": 1
+        },
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 214.0,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1617.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1566.0,
+            "departure_lane": "S_in0_2",
+            "arrived": 1890.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850123,
+        "departed": 5574,
+        "arrived": 5301,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 2,
+        "max_sampled_long_wait_s": 443.0,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1706.5,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1827.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850124,
+        "departed": 5549,
+        "arrived": 5259,
+        "teleported": 0,
+        "collision_events_by_type": {
+          "junction": 1
+        },
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 218.0,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1631.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_3",
+            "arrived": 1966.0,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850125,
+        "departed": 5630,
+        "arrived": 5379,
+        "teleported": 0,
+        "collision_events_by_type": {
+          "side": 1
+        },
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 291.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1636.5,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1750.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850126,
+        "departed": 5505,
+        "arrived": 5218,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 198.0,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1635.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1740.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850127,
+        "departed": 5479,
+        "arrived": 5181,
+        "teleported": 0,
+        "collision_events_by_type": {
+          "junction": 1,
+          "crossing": 1
+        },
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": null,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1671.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1682.0,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850128,
+        "departed": 5661,
+        "arrived": 5372,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": null,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1709.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1677.5,
+            "clean_arrival": true
+          }
+        }
+      }
+    ]
+  },
+  "rotary_early_lane_change": {
+    "network_sha256": {
+      "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+      "daehakro.net.xml": "476d74252dfa1e38a2be69a8c4e90054910a2e67f93b6d8ebf6a3c4fa7e90968",
+      "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+      "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+      "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+      "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+    },
+    "seeds": [
+      850121,
+      850122,
+      850123,
+      850124,
+      850125,
+      850126,
+      850127,
+      850128
+    ],
+    "runs": [
+      {
+        "seed": 850121,
+        "departed": 5575,
+        "arrived": 5297,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 215.0,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1624.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_1",
+            "arrived": 1836.0,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850122,
+        "departed": 5707,
+        "arrived": 5392,
+        "teleported": 0,
+        "collision_events_by_type": {
+          "crossing": 7
+        },
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 218.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1628.5,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1554.0,
+            "departure_lane": "S_in0_1",
+            "arrived": 1839.0,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850123,
+        "departed": 5574,
+        "arrived": 5300,
+        "teleported": 0,
+        "collision_events_by_type": {
+          "junction": 1
+        },
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 289.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1681.5,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1678.0,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850124,
+        "departed": 5535,
+        "arrived": 5259,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 218.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1623.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1559.0,
+            "departure_lane": "S_in0_2",
+            "arrived": 1896.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850125,
+        "departed": 5630,
+        "arrived": 5387,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 217.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1607.5,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1741.0,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850126,
+        "departed": 5513,
+        "arrived": 5236,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": null,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1632.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1740.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850127,
+        "departed": 5484,
+        "arrived": 5197,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 221.0,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1669.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1677.5,
+            "clean_arrival": true
+          }
+        }
+      },
+      {
+        "seed": 850128,
+        "departed": 5662,
+        "arrived": 5383,
+        "teleported": 0,
+        "collision_events_by_type": {},
+        "long_waits_at_end": 0,
+        "waits_at_least_300s": 0,
+        "max_sampled_long_wait_s": 291.5,
+        "emergency": {
+          "fire_1500": {
+            "departed": 1500.5,
+            "departure_lane": "FS_in_0",
+            "arrived": 1686.0,
+            "clean_arrival": true
+          },
+          "ambulance_1500": {
+            "departed": 1500.5,
+            "departure_lane": "S_in0_2",
+            "arrived": 1684.0,
+            "clean_arrival": true
+          }
+        }
+      }
+    ]
+  },
+  "emergency_response_860000": {
+    "episodes": 11,
+    "approach_steps": 287,
+    "simulated_steps_with_different_lane_commands_under_neutral_fields": 1,
+    "mean_absolute_acceleration_command_difference": 0.1370808900009844,
+    "episodes_with_actual_lane_change_during_approach": 1,
+    "episodes_where_a_real_lane_change_depended_on_emergency_inputs_at_that_observation": 1,
+    "episodes_with_same_road_pass": 1
+  }
+}

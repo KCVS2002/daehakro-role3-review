@@ -1,0 +1,174 @@
+{
+  "status": "proposed_for_team_review",
+  "upstream_sources": {
+    "team": "junyeounyang/daehakro_final@59c0ae9",
+    "model_environment": "junyeounyang/Artificial-Intelligence-and-Control-for-Autonomous-Driving@6a46c54",
+    "course": "bmil-ssu/Artificial-Intelligence-and-Control-for-Autonomous-Driving@923430f"
+  },
+  "sumo_version": "1.27.1",
+  "simulation_step_s": 0.5,
+  "teleport_timeout_s": -1,
+  "collision_action": "remove",
+  "collision_check_junctions": true,
+  "collision_gap_factor": -1.0,
+  "av_stuck_s": 240,
+  "planned_emergency_departure_s": 1500,
+  "emergency_priority_runtime_controller": false,
+  "observations": {
+    "length": 65,
+    "dtype": "float32",
+    "ordered_names": [
+      "ego_speed_over_vehicle_maximum",
+      "lane_2_front_gap",
+      "lane_2_front_relative_speed",
+      "lane_2_rear_gap",
+      "lane_2_rear_relative_speed",
+      "lane_1_front_gap",
+      "lane_1_front_relative_speed",
+      "lane_1_rear_gap",
+      "lane_1_rear_relative_speed",
+      "lane_0_front_gap",
+      "lane_0_front_relative_speed",
+      "lane_0_rear_gap",
+      "lane_0_rear_relative_speed",
+      "lane_-1_front_gap",
+      "lane_-1_front_relative_speed",
+      "lane_-1_rear_gap",
+      "lane_-1_rear_relative_speed",
+      "lane_-2_front_gap",
+      "lane_-2_front_relative_speed",
+      "lane_-2_rear_gap",
+      "lane_-2_rear_relative_speed",
+      "lane_2_exists",
+      "lane_1_exists",
+      "lane_0_exists",
+      "lane_-1_exists",
+      "lane_-2_exists",
+      "speed_limit",
+      "signal_distance",
+      "signal_red",
+      "signal_yellow",
+      "crossing_distance_until_rear_clear",
+      "crossing_occupied_until_rear_clear",
+      "junction_distance",
+      "conflict_vehicle_distance",
+      "conflict_vehicle_speed",
+      "conflict_vehicle_present",
+      "emergency_distance",
+      "emergency_behind_same_lane",
+      "emergency_relative_speed",
+      "lane_index",
+      "route_distance_fraction",
+      "segment_remaining",
+      "left_lane_marking",
+      "right_lane_marking",
+      "nearest_person_present",
+      "nearest_person_forward",
+      "nearest_person_right",
+      "coarse_route_waypoint_forward",
+      "coarse_route_waypoint_right",
+      "delta_1s_ego_speed_over_vehicle_maximum",
+      "delta_1s_lane_0_front_gap",
+      "delta_1s_lane_-1_front_gap",
+      "delta_1s_lane_1_front_gap",
+      "delta_1s_signal_distance",
+      "delta_1s_signal_red",
+      "delta_1s_crossing_distance_until_rear_clear",
+      "delta_1s_crossing_occupied_until_rear_clear",
+      "delta_1s_nearest_person_present",
+      "delta_1s_nearest_person_forward",
+      "delta_1s_nearest_person_right",
+      "delta_1s_conflict_vehicle_distance",
+      "delta_1s_emergency_distance",
+      "delta_1s_emergency_behind_same_lane",
+      "delta_1s_emergency_relative_speed",
+      "signed_current_lane_turn_per_10m"
+    ],
+    "conflict_observation": "yield-filtered",
+    "normalization": "Actor obs_mean and obs_scale; clip normalized values to [-10, 10]"
+  },
+  "action": {
+    "accel_range": [
+      -1,
+      1
+    ],
+    "lane_command": {
+      "1": "left",
+      "0": "keep",
+      "-1": "right"
+    }
+  },
+  "networks": {
+    "evaluated": {
+      "network": "environments/evaluated/network/daehakro.sumocfg",
+      "network_sha256": {
+        "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+        "daehakro.net.xml": "c94f40966f665f08d7645a822bf048ebc9947b3d51d21222376139ef14f5989a",
+        "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+        "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+        "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+        "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+      },
+      "evaluated_source_sha256": {
+        "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+        "daehakro.net.xml": "c477db0d0c7fb81d276b512267364a8918fa1bfb51684c7b7497103490090401",
+        "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+        "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+        "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+        "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+      }
+    },
+    "rotary_radius": {
+      "network": "environments/rotary_radius/network/daehakro.sumocfg",
+      "network_sha256": {
+        "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+        "daehakro.net.xml": "84eb9187eada15d6c8563bd9395ccf6de04a74ef29f7afb9b87f34aa0d8f949f",
+        "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+        "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+        "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+        "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+      },
+      "evaluated_source_sha256": {
+        "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+        "daehakro.net.xml": "be2296074d5a05f0bda9b025791aaf26173961b2b9a0677204e86616bba5630e",
+        "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+        "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+        "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+        "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+      }
+    },
+    "rotary_early_lane_change": {
+      "network": "environments/rotary_early_lane_change/network/daehakro.sumocfg",
+      "network_sha256": {
+        "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+        "daehakro.net.xml": "7e3e49b61ff401110151e71a10ddd4be94fe33ed0d0df3e131bf3b7c18c4abad",
+        "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+        "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+        "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+        "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+      },
+      "evaluated_source_sha256": {
+        "daehakro.deco.xml": "9468a591024269c00913381a6ecb63e217e8f94bf7afc11926ec5c9e0cd8a119",
+        "daehakro.net.xml": "476d74252dfa1e38a2be69a8c4e90054910a2e67f93b6d8ebf6a3c4fa7e90968",
+        "daehakro.rou.xml": "544f853979f42e13c33d0193c717d286fc4ff0544157adedde85bb242c269af1",
+        "daehakro.stops.xml": "5837d22cc502a6aabdfd3a7a4ba8506d5cd8c368c79debb98831e4c07f57f243",
+        "daehakro.sumocfg": "a841783ee4bdab0ed46194d41c47405f15414359a550cb1e1cfe19652ceecc3e",
+        "daehakro.tll.xml": "2934c17a5aea604476b53242ff6f7eec363fd7d35ec951b2293e0c4694b3d48c"
+      }
+    }
+  },
+  "models": {
+    "baseline": {
+      "path": "models/role3_baseline.pt",
+      "sha256": "5cbe676ddf2c2e4573892af448afbfffe683f36184e5d58a423ebdafb0f4b1ba"
+    },
+    "collision_braking": {
+      "path": "models/role3_collision_braking.pt",
+      "sha256": "0a4efc13439b8577f445f16de631e26bbfe2614b201a7dfb2002b3f29c9d3a90"
+    },
+    "collision_braking_actor": {
+      "path": "models/role3_collision_braking_actor.npz",
+      "sha256": "7093c296ef75a76ecc2e270d46acc9d46f9c6d25b4d6ecbf0d428ea7d4bd7acc"
+    }
+  }
+}
